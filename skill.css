@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* :root{
+    --heading: rgb(66, 63, 57);
+    --para:rgb(187, 152, 152);
+    --para-tint:#e4e4e4;
+    --white:#fff;
+    --black:rgb(0,0,0,);
+    --helper:#464753;
+    --bg:rgb(173, 173, 162);
+    --button:rgb(226, 124, 28);
+
+} */
+ body{
+    background-color: rgb(219, 219, 219);
+ }
+/* header css stard */
+#header{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    background-color: rgb(236, 241, 245);
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.left{
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+    align-items: center;
+   }
+   .searchbar {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(226, 245, 250);
+    border-radius: 10px;
+   }
+   input{
+    border: none;
+    background: transparent;
+   }
+   input, placeholder{
+    font-weight: 100%;
+    color: rgb(45, 45, 45);
+    font-size: 0.8rem;
+   }
+   .fa-sharp{
+    color: rgb(45, 45, 45);
+   }
+   .fa-brands{
+    color:rgb(0, 89, 255);
+    font-size: 2rem;
+   }
+.right{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+/* .fa-solid{
+color:rgb(0, 89, 255);
+} */
+.home,
+.network i:hover,
+.jobs i:hover,
+.massaging i:hover,
+.notifictions i:hover,
+.me i:hover,
+.forbsiness i:hover,
+.me .down,
+.forbsiness.down:hover{
+color: rgb(49, 49, 49);
+}
+.home,
+.network,
+.jobs,
+.massaging ,
+.notifictions ,
+.me ,
+.forbsiness{
+cursor: pointer;
+font-size: 1rem;
+}
+.home i,
+.network i,
+.jobs i,
+.massaging i,
+.notifictions i,
+.forbsiness i,
+.me i{
+    flex-direction: column;
+    color: grey;
+};
+.me i:first-child{
+    background: gray;
+    color: rgb(255, 255, 248);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.me .down,
+.forbsiness .down{
+    display: flex;
+    color: rgb(8, 8, 8);
+    gap: 0.5rem;
+}
+.growoption a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 8rem;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+.growoption a:hover{
+    text-decoration: underline;
+}
+/* <!--=========== ending-navbar============= --> */
+/* <!-- =============start-section=========== --> */
+#container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    gap: 0.8rem;
+    /* margin: 0.6rem auto; */
+    width: 95%;
+    
+    /* background-color:rgb(197, 116, 116); */
+    
+}
+.sidebar{
+    height:60vh;
+    width: 100%;
+    background-color: rgb(250, 248, 248);
+    border-radius: 0.8rem;
+    position: relative;
+    overflow: hidden;
+}
+.top{
+width: 100%;
+height: 11vh;
+margin-top: -1%;
+background: gray;
+position: absolute;
+}
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    /* top: 1%; */
+    border-radius: 50%;
+    margin-top: 1.6rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 2px solid white;
+}
+.profile{
+    text-align: center;
+    /* position: relative; */
+    top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    /* border-bottom: 2px solid rgb(167, 163, 163); */
+    height: 10vh;
+}
+.sidebar,.profile a{
+    text-decoration: none;
+    color: #000;
+}
+.sidebar,.profile a:hover{
+    text-decoration: underline;
+}
+.sidebar,.profile small{
+    font-size: 0.8rem;
+    color: gray;
+    cursor: pointer;
+}
+.sidebar,.profile small:hover{
+    text-decoration: underline;
+}
+.sidebar,.view{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    /* justify-content: space-between; */
+    padding:  0.1rem;
+    margin-top: 0.5rem 0;
+    /* border-bottom: 2px solid rgb(167, 163, 163); */
+}
+.view,.views{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.4rem;
+    /* margin: 0.4rem 0; */
+    cursor: pointer;
+    /* gap: 5%; */
+    font-weight: 200;
+    
+}
+.views:hover{
+    background-color: rgb(146, 144, 144);
+}
+.view,.views, h6{
+    color: gray;
+}
+.sidebar,.view,.views, a{
+     color: blue;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.sidebar,.booster{
+    /* position: relative; */
+    top: 5%;
+
+}
+.booster ,h6{
+    color: gray;
+
+}
+.booster a{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 0.3rem;
+    font-size: 0.8rem;
+    color: black;
+}
+.booster a i{
+    color: rgb(255, 160, 125);
+
+}
+hr#profile,
+hr#view,
+hr#booster{
+    margin:  0.3rem 0;
+}
+.items{
+    margin: 0.7rem 0.1rem;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.items h6{
+    font-size: 0.6rem;
+    color: black;
+    cursor: pointer;
+}
+.items i{
+    margin-left: 0.4rem;
+    color: black;
+}
+.recent{
+   height:50vh;
+   width: 100%;
+   margin-top: 3rem;
+   background-color: rgb(250, 248, 248);
+   border-radius: 0.8rem;
+   position: relative;
+   overflow: hidden; 
+}
+.recent_job{
+    margin: 1rem;
+   }
+.recent_job h6{
+    font-weight: 400;
+    color: rgb(61, 60, 60);
+}
+.one{
+    margin: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.one h6{
+    color: rgb(100, 100, 100);
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.one i{
+    font-size: 0.7rem;
+    color: rgb(100, 100, 100);
+}
+.Groups h6{
+    color: rgb(20, 20, 247);
+    font-weight: 400;
+}
+.group {
+    display: flex;
+    gap: 0.5rem;
+}
+.group h6{
+    margin-top: 0.3rem;
+    color: rgb(100, 100, 100);
+}
+.group i{
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    color: rgb(100, 100, 100);
+}
+.Groups a{
+justify-content: center;
+font-size: 0.7rem;
+color: rgb(100, 100, 100);
+}
+.Events h6{
+    color: rgb(20, 20, 247);
+    font-weight: 400;
+}
+.Events a{
+    font-size: 0.7rem;
+color: rgb(100, 100, 100);
+text-align: center;
+}
+.Event {
+    display: flex;
+    gap: 0.5rem; 
+}
+.Event h6{
+    margin-top: 0.3rem;
+    color: rgb(100, 100, 100);
+}
+.Event i{
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    color: rgb(100, 100, 100);
+}
+.Discover{
+    text-align: center;
+}
+
+/* <!-- ===========sidebar-end=========== --> */
+/* <!-- ===========main-section stard =========== --> */
+#main{
+    height:90vh;
+    width: 100%;
+    position: relative;
+    /* border: 2px solid black; */
+   }
+.media{
+    margin-top: 20px;
+    padding: 1.5rem;
+    background-color: rgb(250, 248, 248);
+    height: 20vh;
+}
+.search{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.media img{
+    height:2.5rem;
+    width:2.8rem;
+    cursor: pointer;
+    /* margin: 1.3rem 1rem; */
+}
+.media input{
+    width: 100%;
+    height: 40px;
+    padding: 1.2rem;
+    /* margin: 1.3rem 1rem; */
+    border-radius: 2rem;
+    background: rgb(247, 221, 171);
+    text-align: center;
+    cursor: pointer;
+
+}
+ input:hover{
+    background: rgb(224, 224, 224);
+}
+ input placeholder{
+    /* color: rgb(230, 229, 228); */
+    background: white;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+}
+.post{
+    display: flex;
+    gap: 1rem;
+    /* margin: 1.5rem 1rem; */
+    cursor: pointer;
+    opacity: 0.6;
+}
+.post h5{
+    font-weight:400 ;
+}
+.post:nth-child(1) i{
+    color:#0a66c2 ;
+}
+.post:nth-child(2) i{
+    color:rgb(235, 168, 24) ;
+}
+.post:nth-child(3) i{
+    color:rgb(243, 120, 5) ;
+}
+.post:hover{
+    background: rgb(235, 235, 235);
+    border-radius: 0.4rem;
+}
+/* <!-- ===========right-side-coding-stard=========== --> */
+
+.right-side{
+    /* display: flex; */
+    background-color: rgb(250, 248, 248);
+    height:70vh;
+    width: 100%;
+    margin: 0.5rem auto;
+    border-radius: 0.8rem;
+    position: relative;
+    overflow: hidden;
+}
+.right-side .news{
+    padding: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+.news h5{
+    font-weight: 400;
+}
+.right-side h3{
+    padding: 0rem 0.6rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.right-side h3{
+    font-weight: 300;
+}
+.latest_news{
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    gap: 0.1rem;
+    }
+.latest_news a{
+    color: rgb(68, 68, 68);
+    font-size: 12px;
+    cursor: pointer;
+}
+.latest_news small{
+    color: gray;
+    font-size: 10px;
+    cursor: pointer;
+}
+.latest_news a:hover{
+    background: rgb(199, 198, 198);
+    color: black;
+    }
+.latest_news small:hover{
+background: rgb(199, 198, 198);
+color: black;
+}
+.btn{
+    display: none;
+    cursor: pointer;
+}
+.btn-show{
+    display: inline;
+}
+.btn:hover{
+    background: rgb(100, 100, 100);
+}
