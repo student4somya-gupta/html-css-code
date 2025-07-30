@@ -1,226 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>static linkddin page</title>
-    <link rel="stylesheet" href="./skill.css" .css>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title> quiz app project</title>
+    
 </head>
 
 <body>
-    <!------------------ starting navbar ------------------------------>
-    <div id="header">
-        <div class="left">
-            <div class="logo">
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <div class="searchbar">
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                <input type="search-box" placeholder="search for job skills & companys">
-            </div>
-        </div>
-        <div class="right">
-            <div class="home">
 
-                <i class="fa-solid fa-house"></i>
-                <!-- <a href="#"><H6>HOME</H6></a> -->
-                <H6>HOME</H6>
+    <div id="container">
+        <div class="box">
+            <div class="img">
+                <img src="./quiz-image/textbook-image.png" alt="******" style="height: 60px; width: 60px;">
+                <h6><i style="font-size: 20px;">Text<span style="color: rgb(32, 32, 243);">Book</span></i></h6>
+                <h2 style="color:rgb(32, 32, 243); ;">Hello user<b>!</b></h2>
+                <p><b>Enter your name to continue the quiz.</b></p>
             </div>
-            <div class="network">
-                <i class="fa-solid fa-users"></i>
-                <!-- <a href="#"><H6>Network</H6></a> -->
-                <H6>Network</H6>
-
+            <div class="input">
+                <input type="text" id="userName" placeholder="Enter your name">
+                <button id="submit-Name">submit</button><br>
             </div>
-            <div class="jobs">
-                <i class="fa-solid fa-suitcase"></i>
-                <!-- <a href="#"><H6>jobs</H6></a> -->
-                <H6>jobs</H6>
+            <!--  showing user name -->
+            <div>  <span id="userNameSpan"></span></div>
+            <div class="short-para">
+                <span>you'll have 10 secounds to answer each questions. </span>
             </div>
-            <div class="massaging">
-                <i class="fa-solid fa-message"></i>
-                <!-- <a href="#"><H6>messaging</H6></a> -->
-                <H6>messaging</H6>
+            <hr>
+            <div class="select">
+                <h1>select category</h1>
             </div>
-            <div class="notifictions">
-                <i class="fa-solid fa-bell"></i>
-                <!-- <a href="#"><H6>notification</H6></a> -->
-                <H6>notification</H6>
-            </div>
-            <div class="me">
-                <i class="fa-solid fa-user"></i>
-                <div class="down">
-                    <H6>me</H6>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-                <!-- <a href="#"><H6>me</H6></a> -->
-
-            </div>
-
-            <div class="forbsiness">
-                <i class="fa-sharp fa-solid fa-braille"></i>
-                <!-- <a href="#"><H6>For-business</H6></a> -->
-                <div class="down">
-                    <H6>For-business</H6>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-            </div>
-
-            <div class="growoption">
-                <a href="#">Get hirded. try premiu free.</a>
+            <div id="categorySelect">
+                <button class="category_btn" data-category="pipes and cisterns">pipes and cisterns</button>
+                <button class="category_btn" data-category="probability">probability</button>
+                <button class="category_btn" data-category="Problems on age">problem on ages</button>
+                <button class="category_btn" data-category="profit and loss">profit and loss</button>
 
             </div>
         </div>
+
+        <div id="quiz-container" class="hidden">
+            <div class="box-2">
+                <div id="quiz-time-score">
+                <div class="Number">
+                    01
+                </div>
+                <h3>QUESTION</h3> 
+                <div class="score">
+                    01/10
+                </div>
+            </div>
+            
+            <div id="quiz-title">
+            <div id="question-container">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iure?</h4>
+            </div>
+            <div id="answers">
+                <option class="option" value="1">Option-1</option>
+                <option class="option" value="2">Option-2</option>
+                <option class="option" value="3">Option-3</option>
+                <option class="option" value="4">Option-4</option>
+            </div>
+            </div>
+                <button id="next-btn-question" class="hidden">next question</button>
+        </div>
+        </div>
+        
+        </div>
+
     </div>
-    <!----------------------------------- ending navbar ------------------------------------->
-    <!-- =================================start-container==================================== -->
-     <div class="container">
-        <div class="sidebar">
-            <aside>
-
-                <div class="sidebar">
-                    <div class="top"></div>
-                    <img src="./images-skill/IMG20230116102650.jpg" alt="*****">
-    
-                    <div class="profile">
-                        <a href="#">somya gupta</a>
-                        <small>full stack Developer & designer</small>
-                    </div>
-                    <hr id="profile">
-                    <div class="view">
-                        <div class="views">
-                            <h6>who viewed your profile</h6>
-                            <a href="#">42</a>
-                        </div>
-                        <div class="views">
-                            <h6>view of your post</h6>
-                            <a href="#">64</a>
-                        </div>
-                        <hr id="view">
-                    </div>                
-    <div class="booster">
-        <h5>boost your job search</h5>
-        <a href="#"><i class="fa-regular fa-square-small"></i>Try Premium for Free </a>
-        <hr id="booster">
-    </div>
-    <div class="items">
-        <i class="fa-solid fa-bookmark"></i>
-        <h6>save items</h6>
-    </div>
-                </div>
-    
-    
-                <div class="recent">
-                    <div class="recent_job">
-                        <h6>recent</h6>
-                        <div class="one">
-                            <i class="fa-solid fa-users"></i>
-                            <h6>Web Designer and dvelopment......</h6>
-                        </div>
-                        <div class="one">
-                            <i class="fa-solid fa-hashtag"></i>
-                            <h6>microsoft</h6>
-                        </div>
-    
-               
-                        <div class="Groups">
-                            <h6>Group</h6>
-                            <div class="group">
-                                <i class="fa-solid fa-users"></i>
-                                <h6>Web Designer and dvelopment......</h6>
-                            </div>
-                            <a href="#">See all</a>
-                        </div>
-                       <div class="Events">
-                                <h6>Event</h6>
-                                <div class="Event">
-                                    <i class="fa-solid fa-hashtag"></i>
-                            <h6>microsoft</h6>
-                                </div>
-                                <a href="#">See All</a>
-                                 </div>
-                                 <hr>
-                                 <div class="Discover">
-                                 <a href="#">Discover More</a>
-                                </div>
-                        
-                    </div>
-                </div>
-            </aside>
-            </div>
-            <!-- ===========sidebar-end=========== -->
-    <!-- ====================main-section-stard=================== -->
-
-
-        <div class="main">
-            <main>
-                <div id="main-section">
-           
-                <div class="media">
-                    <div class="search">
-                        <img src="./images-skill/IMG20230116102650.jpg" alt="*****">
-                        <input type="search" placeholder="stard a post, try writing with AI">
-                    </div>
-                     <div class="posts">
-                    <div class="post">
-                        <i class="fa-regular fa-image"></i>
-                        <h5>media</h5>
-                    </div>
-                    <div class="post">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <h5>Event</h5>
-                    </div>
-                    <div class="post"><i class="fa-sharp-duotone fa-solid fa-newspaper"></i>
-                        <h5>Write artical</h5>
-                    </div>
-                </div>
-                </div>
-            </main>
-            <!-- ====================main-section-end=================== -->
-    
-        </div>
-        <div class="right-side">
-            <!-- ===================right-side stard ================ -->
-        <div class="right-side">
-            <div class="news">
-                <f5>linkedin news</f5>
-                <i class="fa-sharp fa-solid fa-circle-info"></i>
-            </div>
-            <h3>Top stories</h3>
-            <div class="latest_news">
-            <a href="#">is MBA a must for entrepreneurs? </a>
-            <small>1 day ago</small>
-            <a href="#"> Smaller cities go the Premium way </a>
-            <small>35hr ago</small>
-            <a href="#">carmakers drive up discounts </a>
-            <small>1 day ago</small>
-            <a href="#">NXP semiconductors to hire 6,000 </a>
-            <small>35m ago</small>
-            <a href="#">using tech for social impact </a>
-            <small>1 day ago</small>
-            <span class="btn">
-                <a href="#">Paralympians await brand support </a>
-            <small>25hr ago</small>
-            <a href="#">OTTs Press pause on sequels </a>
-            <small>1 day ago</small>
-            <a href="#">Instant coff brews growth </a>
-            <small>1hr ago</small>
-            <a href="#">Fintech lending on the rise </a>
-            <small>1 day ago</small>
-            <a href="#">EV firms rev up cybersecurity </a>
-            <small>3hr ago</small>
-            </span>
-                    </div>
-                    <button>show me <i class="fa-solid fa-angle-down"></i></button>
-                </div>
-                
-                <!-- ===========right-side-end=========== -->            
-        </div>
-     </div>
-    
+     <!-- <script src="./script/quiz.js"></script> -->
+      <script src="./script/incredible.js"></script>
 </body>
 
 </html>
